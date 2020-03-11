@@ -6,7 +6,7 @@ const app = express();
 
 // Routes
 const studentRoutes = require("./routes/students");
-const logger = require("./routes/logger");
+const logger = require("./middleware/logger");
 
 app.use(express.json());
 app.use("/api", logger);
