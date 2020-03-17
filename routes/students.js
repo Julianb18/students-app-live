@@ -31,7 +31,7 @@ router.get("/:name", (req, res) => {
 // - PUT (individual)
 router.put("/:name", (req, res) => {
   if (req.params.name && req.body) {
-    students = students.map((student) => {
+    students = students.map(student => {
       if (student.name.toLowerCase() === req.params.name.toLowerCase()) {
         Object.assign(student, req.body);
       }
